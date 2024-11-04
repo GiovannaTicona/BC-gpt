@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendas</title>
+    <link rel="stylesheet" href="prendas.css">
+</head>
+<body>
+    <header>
+        <h1>Nuestras Prendas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="prendas.html">Prendas</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html">Carrito de Compras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <div class="producto">
+            <img src="Vestido.jpg" alt="Prenda 1">
+            <h3>Vestido Elegante</h3>
+            <p>Precio: $120</p>
+            <button onclick="addToCart('Vestido Elegante', 120)">Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Blusa.jpg" alt="Prenda 2">
+            <h3>Blusa de Seda</h3>
+            <p>Precio: $65</p>
+            <button onclick="addToCart('Blusa de Seda', 65)">Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Pantalón.jpg" alt="Prenda 3">
+            <h3>Pantalón Formal</h3>
+            <p>Precio: $80</p>
+            <button onclick="addToCart('Pantalón Formal', 80)">Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="falta.jpg" alt="Prenda 4">
+            <h3>Falda elegante</h3>
+            <p>Precio: $150</p>
+            <button onclick="addToCart('Chaqueta de Cuero', 150)">Añadir al Carrito</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Tienda de Ropa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="carrito.js"></script> <!-- Añade este script -->
+</body>
+</html>

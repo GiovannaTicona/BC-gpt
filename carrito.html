@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="prendas.html">Prendas</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html">Carrito de Compras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrito">
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Los productos se agregarán aquí -->
+            </tbody>
+        </table>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Tienda de Ropa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Cargar los productos del carrito al cargar la página
+        window.onload = function() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItemsContainer = document.getElementById('cart-items');
+            let total = 0;
+
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>${item.quantity}</td>
+                    <td>$${item.price}</td>
+                    <td>$${(item.price * item.quantity).toFixed(2)}</td>
+                `;
+                cartItemsContainer.appendChild(row);
+                total += item.price * item.quantity;
+            });
+
+            // Muestra el total
+            const totalRow = document.createElement('tr');
+            totalRow.innerHTML = `
+                <td colspan="3">Total</td>
+                <td>$${total.toFixed(2)}</td>
+            `;
+            cartItemsContainer.appendChild(totalRow);
+        };
+
+        function finalizarCompra() {
+            alert('Gracias por tu compra!');
+            localStorage.removeItem('cart'); // Limpia el carrito después de la compra
+            window.location.href = 'index.html'; // Redirige a la página de inicio
+        }
+    </script>
+</body>
+</html>

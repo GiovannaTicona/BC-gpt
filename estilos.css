@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3f3; /* Fondo rosa suave */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #d9b3b3; /* Rosa suave */
+    color: white;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    color: #5a2d2d; /* Tono más oscuro para el texto */
+}
+
+section#contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f5e7e7; /* Beige rosado */
+    border-radius: 8px;
+}
+
+/* Sección de información de contacto */
+.informacion-contacto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.redes-sociales {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales li {
+    margin: 0 10px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: #d96c6c; /* Rosa más oscuro */
+    font-weight: bold;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+    width: 100%;
+    max-width: 500px;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f4f4; /* Fondo beige claro */
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d96c6c; /* Rosa oscuro */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c45c5c; /* Tono más oscuro al pasar el cursor */
+}
+

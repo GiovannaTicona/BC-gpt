@@ -1,0 +1,89 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f3f3; /* Fondo rosa suave */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #d9b3b3; /* Fondo rosa claro */
+    color: white;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    color: #5a2d2d; /* Texto en tono marrón oscuro */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos para Secciones */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5e7e7; /* Beige rosado */
+}
+
+/* Estilos para la Historia */
+#historia {
+    background-color: #f9f4f4; /* Fondo beige claro */
+    border-left: 5px solid #d96c6c; /* Línea de acento */
+    padding: 15px;
+}
+
+/* Misión y Visión */
+#mision-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.mision, .vision {
+    flex: 1 1 45%;
+    background-color: #f8f3f3; /* Fondo rosa suave */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.mision h3, .vision h3 {
+    color: #d96c6c; /* Rosa oscuro */
+}
+
+/* Estilos para el Equipo */
+#equipo {
+    text-align: center;
+    background-color: #f5e7e7; /* Beige rosado */
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d9b3b3; /* Rosa suave */
+    color: white;
+    margin-top: 20px;
+}

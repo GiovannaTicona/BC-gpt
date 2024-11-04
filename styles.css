@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f2f2; /* Fondo general */
+}
+
+/* Estilos generales del header y navegación */
+header {
+    background-color: #d9b3b3; /* Rosa suave */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Inicio */
+#inicio {
+    background-color: #fce4e4; /* Rosa pálido */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Sobre Nosotros */
+#sobre-nosotros {
+    background-color: #f7d1d1; /* Rosa suave */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Prendas */
+#prendas {
+    background-color: #f1c0c0; /* Rosa coral */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Colecciones */
+#colecciones {
+    background-color: #eccfcf; /* Beige rosado */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Contacto */
+#contacto {
+    background-color: #f7e0e0; /* Rosa perlado */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Carrito de Compras */
+#carrito {
+    background-color: #f3e4e4; /* Rosa grisáceo */
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #d9b3b3; /* Rosa suave */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

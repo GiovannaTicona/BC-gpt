@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios</title>
+    <link rel="stylesheet" href="accesorios.css">
+</head>
+<body>
+    <header>
+        <h1>Nuestros Accesorios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="prendas.html">Prendas</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html">Carrito de Compras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <div class="producto">
+            <img src="Accesorio.jpg" alt="Accesorio 1">
+            <h3>Collar de perla</h3>
+            <p>Precio: $90</p>
+            <button onclick="addToCart('Bolso de Mano', 90)">Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="accesorio 2.jpg" alt="Accesorio 2">
+            <h3>Anillos dorados</h3>
+            <p>Precio: $45</p>
+            <button onclick="addToCart('Collar de Perlas', 45)">Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="accesorio 3.jpg" alt="Accesorio 3">
+            <h3>rejoj de mano dorado</h3>
+            <p>Precio: $70</p>
+            <button onclick="addToCart('Gafas de Sol', 70)">Añadir al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="accesorio 4.jpg" alt="Accesorio 4">
+            <h3>Gafas de sol</h3>
+            <p>Precio: $30</p>
+            <button onclick="addToCart('Pañuelo de Seda', 30)">Añadir al Carrito</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Tienda de Ropa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="carrito.js"></script> <!-- Añade este script -->
+</body>
+</html>
